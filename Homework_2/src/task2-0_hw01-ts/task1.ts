@@ -1,17 +1,5 @@
 // Write function, which takes two strings, and returns true if they are anagrams of one another.
 
-// function anagrams(str1, str2) {
-//     if (str1.length == str2.length) {
-//         for (let i1 = 0, i2 = str2.length - 1; i1 < str1.length; i1++, i2--) {
-//             if (str1[i1] != str2[i2]) {
-//                 return false;
-//             }
-//         }
-//         return true;
-//     }
-//     return false;
-// }
-
 function anagrams_ts(str1: string, str2: string): boolean {
     if (str1.length == str2.length) {
         let letters1 = str1.split('').sort();

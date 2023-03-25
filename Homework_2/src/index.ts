@@ -1,1 +1,1 @@
-console.log('app.ts loaded');
+console.log("app.ts loaded");
