@@ -55,6 +55,17 @@ app.put('/users/:id', (req, res) => {
     res.send(user);
 });
 
+app.delete('/users/:id', (req, res) => {
+    const { id } = req.params;
+    const index = users.findIndex(u => u.id === Number(id));
+    if (index === -1) {
+        res.status(404).send('User not found');
+        return;
+    }
+    users.splice(index, 1);
+    res.send({ message: 'User deleted' });
+});
+
 app.listen(3000, () => {
     console.log('Server is listening on port 3000');
 });
