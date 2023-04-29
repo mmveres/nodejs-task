@@ -3,7 +3,7 @@ import { UserEntity } from "./user.entity";
 import { usersRepository } from "./users.repository";
 
 class UsersService {
-  createPost(dto: CreateUserDto): UserEntity {
+  createUser(dto: CreateUserDto): UserEntity {
     return usersRepository.create(dto);
   }
   getUsers(): UserEntity[] {

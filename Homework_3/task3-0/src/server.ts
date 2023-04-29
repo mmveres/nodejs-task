@@ -2,7 +2,6 @@ import express, { NextFunction, Request, Response } from "express";
 import morgan from "morgan";
 import { HttpError } from "http-errors";
 import { config } from "./config/config";
-import { postsController } from "./modules/posts/posts.controller";
 import { usersController } from "./modules/users/users.controller";
 
 export class Server {
