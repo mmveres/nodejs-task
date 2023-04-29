@@ -107,22 +107,35 @@
 //     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
 //   }
 // }
+// {
+//   // https://www.typescriptlang.org/tsconfig#compilerOptions
+//   "compilerOptions": {
+//     "esModuleInterop": true,
+//     "lib": ["es2020"],
+//  //   "module": "es2022",
+//     "preserveConstEnums": true,
+//     "moduleResolution": "node",
+//     "strict": true,
+//     "sourceMap": true,
+//   //  "target": "es2022",
+//     "types": ["node"],
+//     "outDir": "dist",
+//     "target": "esnext",
+//     "module": "commonjs"
+//   },
+//   "include": ["src/**/*"],
+//   "exclude": ["node_modules"]
+// }
+
 {
-  // https://www.typescriptlang.org/tsconfig#compilerOptions
   "compilerOptions": {
     "esModuleInterop": true,
-    "lib": ["es2020"],
- //   "module": "es2022",
-    "preserveConstEnums": true,
-    "moduleResolution": "node",
-    "strict": true,
-    "sourceMap": true,
-  //  "target": "es2022",
-    "types": ["node"],
+    "target": "es6",
+    "module": "commonjs",
     "outDir": "dist",
-    "target": "esnext",
-    "module": "commonjs"
+    "sourceMap": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
